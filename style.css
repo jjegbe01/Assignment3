@@ -1,0 +1,138 @@
+
+
+body{
+background: #AA3939;
+}
+
+#left-navbar {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #FFC5C5;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+
+
+.sidebar-buttons {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*-------------------------------------------------------------------*/
+
+/* this is the positioning for the whole board */    
+
+#boardWrapper 
+{ 
+width: 291px; 
+margin: 0 auto; 
+ 
+}
+
+#contentWrapper
+{
+width: 500px;
+height: auto;
+min-height: 300px; 
+margin: 0 auto; 
+background: #FFC5C5;
+border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+border-top-left-radius: 20px;	
+padding-top:10px;
+padding-left:10px;
+padding-right:10px;
+padding-bottom:10px;
+}  
+  
+  
+
+/* in our tic tac toe game we are going to let the user enter an 'x' or an 'o' after they click the appropriate box using their keyboard, so this is what the input is for */  
+  
+input 
+{ 
+text-align: center; 
+    
+font-family: "Courier New"; 
+text-transform: uppercase; 
+color: black;     
+}      
+  
+  
+
+/* this is how each box space on the board will look */   
+  
+#box 
+{ 
+
+border: 1px dashed #801515;
+
+width: 90px;
+height: 80px; 
+background: white; 
+}     
+  
+  
+
+/* because we have a div around all the boxes and we have some spacing between each of them, we are able to set this div to a background color of black, and this           
+  
+will allow the background space to be black making it look like a real tic tac toe board */      
+  
+#boxesWrapper 
+{ 
+background: black; 
+}       
+  
+  
+
+/* this gives the second and third row of boxes some spacing from the row before it */      
+  
+.box4 { margin-top: 4px; }   
+.box5 { margin-top: 4px; }   
+.box6 { margin-top: 4px; }    
+.box7 { margin-top: 4px; }    
+.box8 { margin-top: 4px; }    
+.box9 { margin-top: 4px; }   
+  
+  
+
+/* this is the div where the "winner text" will be shown */        
+  
+#resetButton 
+{ 
+background: orange; 
+text-align: center; 
+margin-top: 20px; 
+cursor: pointer; 
+}       
+  
+  
+
+/* reset button */       
+  
+#reset 
+{ 
+background: #5c5c5c; 
+border: 1px solid black; 
+text-align: center; 
+font-size: 25px; 
+cursor: pointer; 
+color: white; 
+margin-top: 30px;
+}   
+  
+#reset:hover 
+{ 
+background: #303030;  
+} 
